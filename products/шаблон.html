@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ЗАМЕНИТЬ: заголовок вкладки браузера -->
+  <title>Потолочный светильник «Название» - Светлый дом</title>
+
+  <!-- ЗАМЕНИТЬ: короткое описание товара для поисковиков -->
+  <meta name="description" content="Потолочный светильник «Название» - демонстрационная модель учебного каталога.">
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <div class="site-header__brand">
+        <a class="site-header__logo" href="../index.html">Светлый дом</a>
+        <p class="site-header__tagline">Свет, который делает пространство ярче</p>
+      </div>
+      <div class="site-header__contacts">
+        <p>Тел.: <a href="tel:+79785851024">8 (800) 585-10-24</a></p>
+        <p><a href="mailto:info@yandex.ru">info@yandex.ru</a></p>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-menu">Меню</button>
+
+    <!--
+      ВНИМАНИЕ: пути в этом меню начинаются с ../ , потому что страница товара
+      лежит в подпапке products/ - на уровень глубже, чем index.html и другие страницы.
+      Не убирай ../ иначе ссылки сломаются.
+
+      Активную категорию отмечай классом sidebar-nav__link--active
+      на той ссылке, к которой относится ТЕКУЩИЙ товар (сейчас отмечена
+      "Потолочные светильники" - поменяй на нужную категорию).
+    -->
+    <nav class="sidebar-nav" id="main-menu" aria-label="Главное меню">
+      <p class="sidebar-nav__title">Разделы</p>
+      <ul class="sidebar-nav__list">
+        <li><a class="sidebar-nav__link" href="../index.html">Главная страница</a></li>
+        <li><a class="sidebar-nav__link" href="../author.html">Об авторе</a></li>
+        <li><a class="sidebar-nav__link" href="../company.html">О фирме</a></li>
+        <li><a class="sidebar-nav__link sidebar-nav__link--active" href="../polotok_lamp-menu.html">Потолочные светильники</a></li>
+        <li><a class="sidebar-nav__link" href="../stena-menu.html">Настенные светильники</a></li>
+        <li><a class="sidebar-nav__link" href="../table-lamps-menu.html">Настольные лампы</a></li>
+      </ul>
+    </nav>
+
+    <main class="main-content" id="main">
+      <div class="product-detail">
+        <div class="product-detail__image">
+          <!-- ЗАМЕНИТЬ: путь к картинке товара и alt-описание -->
+          <img src="../images/products/orion-pl40.svg" alt="Потолочный светильник Орион PL-40">
+        </div>
+
+        <div class="product-detail__body">
+          <!-- ЗАМЕНИТЬ: название товара -->
+          <h1>Потолочный светильник «Название»</h1>
+
+          <!-- ЗАМЕНИТЬ: цену -->
+          <p class="product-detail__price">4 290 ₽</p>
+
+          <!-- ЗАМЕНИТЬ: краткое описание товара -->
+          <p>Краткое описание товара: для чего подходит, особенности, на что обратить внимание при выборе.</p>
+
+          <h2>Характеристики</h2>
+          <!-- ЗАМЕНИТЬ: список характеристик - добавляй/удаляй строки по необходимости -->
+          <ul class="product-card__specs">
+            <li>Мощность: 40 Вт (LED)</li>
+            <li>Цветовая температура: 4000 K</li>
+            <li>Материал корпуса: пластик, металл</li>
+            <li>Диаметр: 45 см</li>
+            <li>Степень защиты: IP20</li>
+          </ul>
+
+          <div class="product-card__actions">
+            <a class="btn btn--secondary" href="../polotok_lamp-menu.html">← К категории</a>
+            <!-- ЗАМЕНИТЬ: data-product-name - имя товара для уведомления корзины -->
+            <button type="button" class="btn btn--primary" data-add-to-cart data-product-name="Название товара">Добавить в корзину</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p><strong>Светлый дом</strong> - учебный демонстрационный магазин освещения</p>
+      <nav class="site-footer__nav" aria-label="Ссылки в конце">
+        <a href="../index.html">Главная</a>
+        <a href="../company.html">О фирме</a>
+        <a href="../author.html">Об авторе</a>
+      </nav>
+      <p class="site-footer__copy">© 2026 Магазин «Светлый дом». Все права защищены.</p>
+      <p>Электронная почта: <a href="mailto:info@yandex.ru">info@yandex.ru</a></p>
+    </div>
+  </footer>
+  <div class="cart-toast" id="cart-toast" role="status" aria-live="polite"></div>
+</body>
+</html>

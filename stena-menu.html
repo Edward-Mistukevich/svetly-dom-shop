@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Настенные светильники - Светлый дом</title>
+  <meta name="description" content="Бра и настенные светильники для спален, прихожих и зон зеркал - демонстрационный каталог «Светлый дом».">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <div class="site-header__brand">
+        <a class="site-header__logo" href="index.html">Светлый дом</a>
+        <p class="site-header__tagline">Свет, который делает пространство ярче</p>
+      </div>
+      <div class="site-header__contacts">
+        <p>Телефон: <a href="tel:+79785851024">8 (800) 585-10-24</a></p>
+        <p><a href="mailto:info@yandex.ru">info@yandex.ru</a></p>
+      </div>
+    </div>
+    <div class="site-header__banner">
+      <img src="images/header-banner.svg" alt="Декоративный баннер с абстрактными лампами и тёплым светом">
+    </div>
+  </header>
+
+  <div class="layout">
+    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-menu">Меню</button>
+    <nav class="sidebar-nav" id="main-menu" aria-label="Главное меню">
+      <p class="sidebar-nav__title">Меню</p>
+      <ul class="sidebar-nav__list">
+        <li><a class="sidebar-nav__link" href="index.html">Главная страница</a></li>
+        <li><a class="sidebar-nav__link" href="author.html">Об авторе</a></li>
+        <li><a class="sidebar-nav__link" href="company.html">О фирме</a></li>
+        <li><a class="sidebar-nav__link" href="polotok_lamp-menu.html">Потолочные светильники</a></li>
+        <li><a class="sidebar-nav__link sidebar-nav__link--active" href="stena-menu.html">Настенные светильники</a></li>
+        <li><a class="sidebar-nav__link" href="table-lamps-menu.html">Настольные лампы</a></li>
+      </ul>
+    </nav>
+
+    <main class="main-content" id="main">
+      <section class="page-intro">
+        <h1>Настенные светильники</h1>
+        <p>Мягкий локальный свет у кровати, в коридоре и у рабочей зоны. Компактные модели с LED-модулями.</p>
+      </section>
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-card__image-wrap"><img src="images/products/atlas-w2.svg" alt="Бра Атлас WW-131"></div>
+          <div class="product-card__body">
+            <h2 class="product-card__title">Бра «Атлас WW-131»</h2>
+            <p class="product-card__price">3 150 ₽</p>
+            <ul class="product-card__specs"><li>Мощность: 12 Вт (LED)</li><li>Материал: алюминий</li><li>Цветовая температура: 3000 K</li></ul>
+            <div class="product-card__actions">
+              <a class="btn btn--secondary" href="products/WW-131.html">Подробнее</a>
+              <button type="button" class="btn btn--primary" data-add-to-cart data-product-name="Атлас WW-131">Добавить в корзину</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-card__image-wrap"><img src="images/products/arc-mini.svg" alt="Настенный светильник Arc Mini"></div>
+          <div class="product-card__body">
+            <h2 class="product-card__title">Настенный светильник «Arc Mini»</h2>
+            <p class="product-card__price">2 780 ₽</p>
+            <ul class="product-card__specs"><li>Мощность: 8 Вт (LED)</li><li>Размеры: 18 × 12 см</li><li>Степень защиты: IP20</li></ul>
+            <div class="product-card__actions">
+              <a class="btn btn--secondary" href="products/arc-mini.html">Подробнее</a>
+              <button type="button" class="btn btn--primary" data-add-to-cart data-product-name="Arc Mini">Добавить в корзину</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-card__image-wrap"><img src="images/products/clear-frame.svg" alt="Подсветка зеркала Clear Frame"></div>
+          <div class="product-card__body">
+            <h2 class="product-card__title">Подсветка зеркала «Clear Frame»</h2>
+            <p class="product-card__price">5 400 ₽</p>
+            <ul class="product-card__specs"><li>Мощность: 18 Вт (LED)</li><li>Длина: 60 см</li><li>Напряжение: 220 В</li></ul>
+            <div class="product-card__actions">
+              <a class="btn btn--secondary" href="products/clear-frame.html">Подробнее</a>
+              <button type="button" class="btn btn--primary" data-add-to-cart data-product-name="Clear Frame">Добавить в корзину</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p><strong>Светлый дом</strong> - демонстрационный магазин освещения</p>
+      <p class="site-footer__copy">© 2026 Магазин «Светлый дом». Ваши права - это ваши права.</p>
+      <p>Электронная почта: <a href="mailto:info@yandex.ru">info@yandex.ru</a></p>
+    </div>
+  </footer>
+  <div class="cart-toast" id="cart-toast" role="status" aria-live="polite"></div>
+</body>
+</html>
