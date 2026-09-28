@@ -3,11 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- ЗАМЕНИТЬ: заголовок вкладки браузера -->
   <title>Потолочный светильник «Название» - Светлый дом</title>
 
-  <!-- ЗАМЕНИТЬ: короткое описание товара для поисковиков -->
   <meta name="description" content="Потолочный светильник «Название» - демонстрационная модель учебного каталога.">
 
   <link rel="stylesheet" href="../css/style.css">
@@ -30,16 +27,6 @@
 
   <div class="layout">
     <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-menu">Меню</button>
-
-    <!--
-      ВНИМАНИЕ: пути в этом меню начинаются с ../ , потому что страница товара
-      лежит в подпапке products/ - на уровень глубже, чем index.html и другие страницы.
-      Не убирай ../ иначе ссылки сломаются.
-
-      Активную категорию отмечай классом sidebar-nav__link--active
-      на той ссылке, к которой относится ТЕКУЩИЙ товар (сейчас отмечена
-      "Потолочные светильники" - поменяй на нужную категорию).
-    -->
     <nav class="sidebar-nav" id="main-menu" aria-label="Главное меню">
       <p class="sidebar-nav__title">Разделы</p>
       <ul class="sidebar-nav__list">
@@ -55,22 +42,17 @@
     <main class="main-content" id="main">
       <div class="product-detail">
         <div class="product-detail__image">
-          <!-- ЗАМЕНИТЬ: путь к картинке товара и alt-описание -->
-          <img src="../images/products/orion-pl40.svg" alt="Потолочный светильник Орион PL-40">
+          <img src="../images/products/" alt="Потолочный светильник Орион PL-40">
         </div>
 
         <div class="product-detail__body">
-          <!-- ЗАМЕНИТЬ: название товара -->
           <h1>Потолочный светильник «Название»</h1>
 
-          <!-- ЗАМЕНИТЬ: цену -->
           <p class="product-detail__price">4 290 ₽</p>
 
-          <!-- ЗАМЕНИТЬ: краткое описание товара -->
           <p>Краткое описание товара: для чего подходит, особенности, на что обратить внимание при выборе.</p>
 
           <h2>Характеристики</h2>
-          <!-- ЗАМЕНИТЬ: список характеристик - добавляй/удаляй строки по необходимости -->
           <ul class="product-card__specs">
             <li>Мощность: 40 Вт (LED)</li>
             <li>Цветовая температура: 4000 K</li>
@@ -81,7 +63,6 @@
 
           <div class="product-card__actions">
             <a class="btn btn--secondary" href="../polotok_lamp-menu.html">← К категории</a>
-            <!-- ЗАМЕНИТЬ: data-product-name - имя товара для уведомления корзины -->
             <button type="button" class="btn btn--primary" data-add-to-cart data-product-name="Название товара">Добавить в корзину</button>
           </div>
         </div>
